@@ -3,69 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Perfect - Phone & Computer Repair</title>
+    <title>PixelFix - Phone & Computer Repair</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="glass-nav">
+    <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <h2>Pixel Perfect</h2>
+            <div class="nav-logo">
+                <h2>PixelFix</h2>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
-            <div class="hamburger-menu" id="hamburger-menu">
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
 
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav" id="mobile-nav">
-        <ul class="mobile-nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="glass-orb orb-1"></div>
-            <div class="glass-orb orb-2"></div>
-            <div class="glass-orb orb-3"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text glass-panel">
-                <h1 class="hero-title">
-                    <span class="title-line">Expert Device</span>
-                    <span class="title-line gradient-text">Restoration</span>
-                </h1>
-                <p class="hero-subtitle">Professional phone and computer repair services with precision and care. We bring your devices back to pixel-perfect condition.</p>
-                <div class="hero-cta">
-                    <button class="glass-button primary">Get Quote</button>
-                    <button class="glass-button secondary">Our Services</button>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Expert Phone & Computer Repair</h1>
+                <p class="hero-subtitle">Fast, reliable, and affordable repair services for all your devices. We fix it right the first time.</p>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn btn-primary">View Pricing</a>
+                    <a href="#contact" class="btn btn-secondary">Get Quote</a>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="floating-device device-1">
-                    <div class="device-glow"></div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>5000+</h3>
+                    <p>Devices Repaired</p>
                 </div>
-                <div class="floating-device device-2">
-                    <div class="device-glow"></div>
+                <div class="stat">
+                    <h3>24hr</h3>
+                    <p>Quick Turnaround</p>
+                </div>
+                <div class="stat">
+                    <h3>1 Year</h3>
+                    <p>Warranty</p>
                 </div>
             </div>
         </div>
@@ -73,107 +65,141 @@
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <div class="section-container">
+        <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive repair solutions for all your devices</p>
+                <h2>Our Services</h2>
+                <p>Professional repair services for all your tech needs</p>
             </div>
             <div class="services-grid">
-                <div class="service-card glass-card">
-                    <div class="service-icon">
-                        <div class="icon-bg phone-icon"></div>
-                    </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
                     <h3>Phone Repair</h3>
-                    <p>Screen replacements, battery fixes, water damage recovery, and software troubleshooting for all smartphone brands.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">Screen Replacement</span>
-                        <span class="feature-tag">Battery Repair</span>
-                        <span class="feature-tag">Water Damage</span>
-                    </div>
+                    <p>Screen replacements, battery issues, water damage, and more for all smartphone brands</p>
                 </div>
-                <div class="service-card glass-card">
-                    <div class="service-icon">
-                        <div class="icon-bg laptop-icon"></div>
-                    </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
                     <h3>Laptop Repair</h3>
-                    <p>Hardware diagnostics, component replacement, performance optimization, and data recovery services.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">Hardware Fixes</span>
-                        <span class="feature-tag">Data Recovery</span>
-                        <span class="feature-tag">Performance</span>
-                    </div>
+                    <p>Hardware failures, software issues, virus removal, and performance optimization</p>
                 </div>
-                <div class="service-card glass-card">
-                    <div class="service-icon">
-                        <div class="icon-bg desktop-icon"></div>
-                    </div>
+                <div class="service-card">
+                    <div class="service-icon">🖥️</div>
                     <h3>Desktop Repair</h3>
-                    <p>Custom builds, upgrades, troubleshooting, and maintenance for desktop computers and workstations.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">Custom Builds</span>
-                        <span class="feature-tag">Upgrades</span>
-                        <span class="feature-tag">Maintenance</span>
-                    </div>
+                    <p>Component upgrades, system crashes, data recovery, and complete system builds</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📟</div>
+                    <h3>Tablet Repair</h3>
+                    <p>Screen repairs, charging port fixes, and software troubleshooting for all tablet brands</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="section-container">
-            <div class="about-content">
-                <div class="about-text glass-panel">
-                    <h2 class="section-title">Why Choose Pixel Perfect?</h2>
-                    <p>With years of experience in device restoration, we combine technical expertise with genuine care for your technology. Every repair is performed with precision and attention to detail.</p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <h3>500+</h3>
-                            <p>Devices Repaired</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>24h</h3>
-                            <p>Average Turnaround</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>99%</h3>
-                            <p>Success Rate</p>
-                        </div>
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Repair Pricing</h2>
+                <p>Service cost pricing - parts and upgrades are additional based on your choice of brand and specifications</p>
+            </div>
+            
+            <!-- Phone Repairs -->
+            <div class="pricing-category">
+                <h3 class="category-title">📱 Phone Repairs</h3>
+                <div class="pricing-table">
+                    <div class="pricing-row">
+                        <div class="service-name">Screen Replacement (iPhone)</div>
+                        <div class="price-range">$89 - $199</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="service-name">Screen Replacement (Android)</div>
+                        <div class="price-range">$69 - $149</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="service-name">Battery Replacement</div>
+                        <div class="price-range">$49 - $79</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="service-name">Charging Port Repair</div>
+                        <div class="price-range">$59 - $89</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="service-name">Camera Replacement</div>
+                        <div class="price-range">$79 - $129</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="service-name">Water Damage Repair</div>
+                        <div class="price-range">$99 - $199</div>
                     </div>
                 </div>
-                <div class="about-visual">
-                    <div class="expertise-badge glass-card">
-                        <div class="badge-glow"></div>
-                        <h4>Certified Expertise</h4>
-                        <p>Professional training and certification</p>
+            </div>
+
+            <!-- Computer Repairs -->
+            <div class="pricing-category">
+                <h3 class="category-title">💻 Computer Repairs</h3>
+                <div class="pricing-table">
+                    <div class="pricing-row">
+                        <div class="service-name">Virus Removal & Cleanup</div>
+                        <div class="price-range">$79 - $149</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="service-name">Hard Drive Replacement</div>
+                        <div class="price-range">$99 - $249</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="service-name">RAM Memory Upgrade</div>
+                        <div class="price-range">$89 - $199</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="service-name">Laptop Screen Repair</div>
+                        <div class="price-range">$149 - $299</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="service-name">Data Recovery</div>
+                        <div class="price-range">$199 - $499</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="service-name">System Tune-up</div>
+                        <div class="price-range">$59 - $99</div>
                     </div>
                 </div>
+            </div>
+
+            <div class="pricing-note">
+                <p><strong>Note:</strong> Prices shown are for service labor only. Parts, components, and upgrades are additional costs that vary by brand, model, and specifications you choose. Free diagnostic included with all repairs.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="section-container">
+        <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Ready to restore your device? Contact us today</p>
+                <h2>Get In Touch</h2>
+                <p>Ready to fix your device? Contact us today for a free quote</p>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item glass-card">
-                        <div class="contact-icon phone-contact"></div>
-                        <div class="contact-details">
-                            <h3>Call Us</h3>
-                            <a href="tel:+447494712431">+44 7494712431</a>
-                        </div>
+            <div class="contact-info-center">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-details">
+                        <h4>Call Us</h4>
+                        <p><a href="tel:+15551234567" class="contact-link">(555) 123-4567</a></p>
+                        <small>Replace with your actual phone number</small>
                     </div>
-                    <div class="contact-item glass-card">
-                        <div class="contact-icon email-contact"></div>
-                        <div class="contact-details">
-                            <h3>Email Us</h3>
-                            <a href="mailto:pixelperfect.contactme@gmail.com">pixelperfect.contactme@gmail.com</a>
-                        </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-details">
+                        <h4>Email Us</h4>
+                        <p><a href="mailto:info@pixelfix.com" class="contact-link">info@pixelfix.com</a></p>
+                        <small>Replace with your actual email address</small>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🕒</div>
+                    <div class="contact-details">
+                        <h4>Business Hours</h4>
+                        <p>Mon-Sat: 9AM-7PM<br>Sunday: 11AM-5PM</p>
                     </div>
                 </div>
             </div>
@@ -181,9 +207,30 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer glass-panel">
-        <div class="footer-content">
-            <p>&copy; 2025 Pixel Perfect. Expert device restoration services.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PixelFix</h3>
+                    <p>Your trusted partner for all device repairs. Quality service, fair prices, fast turnaround.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📞 <a href="tel:+15551234567" class="footer-link">(555) 123-4567</a></p>
+                    <p>✉️ <a href="mailto:info@pixelfix.com" class="footer-link">info@pixelfix.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PixelFix. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
